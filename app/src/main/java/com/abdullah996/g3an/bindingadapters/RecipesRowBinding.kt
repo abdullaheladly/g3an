@@ -12,6 +12,7 @@ import coil.load
 import com.abdullah996.g3an.R
 import com.abdullah996.g3an.model.Result
 import com.abdullah996.g3an.ui.fragments.recipes.RecipesFragmentDirections
+import org.jsoup.Jsoup
 
 class RecipesRowBinding {
     companion object{
@@ -73,6 +74,14 @@ class RecipesRowBinding {
                         )
                     }
                 }
+            }
+        }
+        @BindingAdapter("parseHtml")
+        @JvmStatic
+        fun parseHtml(textView: TextView, description: String?){
+            if(description != null) {
+                val desc = Jsoup.parse(description).text()
+                textView.text = desc
             }
         }
     }
