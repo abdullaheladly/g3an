@@ -3,7 +3,11 @@ package com.abdullah996.g3an.util
 class Constants {
     companion object{
         const val BASE_URL="https://api.spoonacular.com"
+        const val BASE_IMAGE_URL = "https://spoonacular.com/cdn/ingredients_100x100/"
         const val API_KEY="5ffd03bf8a074c378914cd268ca673d1"
+
+
+        const val RECIPE_RESULT_KEY = "recipeBundle"
 
         // api query key
         const val  QUERY_NUMBER="number"

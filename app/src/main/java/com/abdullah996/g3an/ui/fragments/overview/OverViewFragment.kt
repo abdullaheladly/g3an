@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat
 import coil.load
 import com.abdullah996.g3an.R
 import com.abdullah996.g3an.model.Result
+import com.abdullah996.g3an.util.Constants.Companion.RECIPE_RESULT_KEY
 import kotlinx.android.synthetic.main.fragment_over_view.view.*
 import org.jsoup.Jsoup
 
@@ -22,7 +23,7 @@ class OverViewFragment : Fragment() {
         val view= inflater.inflate(R.layout.fragment_over_view, container, false)
 
         val args = arguments
-        val myBundle: Result? = args?.getParcelable("recipeBundle")
+        val myBundle: Result? = args?.getParcelable(RECIPE_RESULT_KEY)
 
         view.main_imageView.load(myBundle?.image)
         view.title_textView.text = myBundle?.title

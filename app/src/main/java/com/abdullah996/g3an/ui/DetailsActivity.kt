@@ -11,6 +11,7 @@ import com.abdullah996.g3an.adapters.PagerAdapter
 import com.abdullah996.g3an.ui.fragments.ingredients.IngredientsFragment
 import com.abdullah996.g3an.ui.fragments.instructions.InstructionsFragment
 import com.abdullah996.g3an.ui.fragments.overview.OverViewFragment
+import com.abdullah996.g3an.util.Constants.Companion.RECIPE_RESULT_KEY
 import kotlinx.android.synthetic.main.activity_details.*
 
 class DetailsActivity : AppCompatActivity() {
@@ -33,7 +34,7 @@ class DetailsActivity : AppCompatActivity() {
         titles.add("Instructions")
 
         val resultBundle = Bundle()
-        resultBundle.putParcelable("recipeBundle", args.result)
+        resultBundle.putParcelable(RECIPE_RESULT_KEY, args.result)
 
         val adapter = PagerAdapter(
             resultBundle,
@@ -41,7 +42,6 @@ class DetailsActivity : AppCompatActivity() {
             titles,
             supportFragmentManager
         )
-
         viewPager.adapter = adapter
         tabLayout.setupWithViewPager(viewPager)
 
