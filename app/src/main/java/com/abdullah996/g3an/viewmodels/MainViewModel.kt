@@ -7,7 +7,8 @@ import android.net.NetworkCapabilities
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
 import com.abdullah996.g3an.data.Repository
-import com.abdullah996.g3an.data.database.RecipesEntity
+import com.abdullah996.g3an.data.database.entities.FavoritesEntity
+import com.abdullah996.g3an.data.database.entities.RecipesEntity
 import com.abdullah996.g3an.model.FoodRecipe
 import com.abdullah996.g3an.util.NetworkResult
 import kotlinx.coroutines.Dispatchers
@@ -23,11 +24,27 @@ class  MainViewModel @ViewModelInject constructor (
 
     /** Room */
 
-    val readRecipes:LiveData<List<RecipesEntity>> = repository.local.readDatabase().asLiveData()
+    val readRecipes:LiveData<List<RecipesEntity>> = repository.local.readRecipes().asLiveData()
+    val readFavoriteRecipes:LiveData<List<FavoritesEntity>> = repository.local.readFavoriteRecipes().asLiveData()
+
+
     private fun insertRecipes(recipesEntity: RecipesEntity)=viewModelScope.launch(Dispatchers.IO) {
         repository.local.insertRecipes(recipesEntity)
 
     }
+    private fun insertFavoriteRecipe(favoritesEntity: FavoritesEntity)=viewModelScope.launch(Dispatchers.IO) {
+        repository.local.insertFavoriteRecipes(favoritesEntity)
+
+    }
+    private fun deleteFavoriteRecipe(favoritesEntity: FavoritesEntity)=viewModelScope.launch(Dispatchers.IO) {
+        repository.local.deleteFavoriteRecipe(favoritesEntity)
+    }
+    private fun deleteAllFavoriteRecipes()=viewModelScope.launch(Dispatchers.IO) {
+        repository.local.deleteAllFavoriteRecipes()
+    }
+
+
+
 
 
     /** Retrofit */
@@ -59,7 +76,7 @@ class  MainViewModel @ViewModelInject constructor (
     }
 
     private fun offlineCacheRecipes(foodRecipe: FoodRecipe) {
-            val recipesEntity=RecipesEntity(foodRecipe)
+            val recipesEntity= RecipesEntity(foodRecipe)
             insertRecipes(recipesEntity)
     }
 

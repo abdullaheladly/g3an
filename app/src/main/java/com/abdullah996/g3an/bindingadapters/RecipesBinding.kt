@@ -1,15 +1,12 @@
 package com.abdullah996.g3an.bindingadapters
 
-import android.net.NetworkRequest
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
-import com.abdullah996.g3an.data.database.RecipesDatabase
-import com.abdullah996.g3an.data.database.RecipesEntity
+import com.abdullah996.g3an.data.database.entities.RecipesEntity
 import com.abdullah996.g3an.model.FoodRecipe
 import com.abdullah996.g3an.util.NetworkResult
-import retrofit2.Response
 
 class RecipesBinding {
 

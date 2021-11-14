@@ -1,4 +1,4 @@
-package com.abdullah996.g3an.data.database
+package com.abdullah996.g3an.data.database.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
