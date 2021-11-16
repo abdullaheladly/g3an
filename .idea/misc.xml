@@ -16,7 +16,10 @@
         <entry key="..\:/projets/G3an/app/src/main/res/layout/ingredients_row_layout.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/placeholder_row_layout.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/recipes_row_layout.xml" value="0.18" />
+        <entry key="..\:/projets/G3an/app/src/main/res/menu-v26/favorite_contextual_menu.xml" value="0.1921875" />
         <entry key="..\:/projets/G3an/app/src/main/res/menu/details_menu.xml" value="0.1" />
+        <entry key="..\:/projets/G3an/app/src/main/res/menu/favorite_contextual_menu.xml" value="0.1921875" />
+        <entry key="..\:/projets/G3an/app/src/main/res/menu/favorite_recipes_menu.xml" value="0.1921875" />
         <entry key="..\:/projets/G3an/app/src/main/res/menu/recipes_menu.xml" value="0.1" />
       </map>
     </option>
