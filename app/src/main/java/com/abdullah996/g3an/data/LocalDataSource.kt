@@ -2,6 +2,7 @@ package com.abdullah996.g3an.data
 
 import com.abdullah996.g3an.data.database.RecipesDao
 import com.abdullah996.g3an.data.database.entities.FavoritesEntity
+import com.abdullah996.g3an.data.database.entities.FoodJokeEntity
 import com.abdullah996.g3an.data.database.entities.RecipesEntity
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
@@ -18,6 +19,10 @@ class LocalDataSource @Inject constructor(
         return recipesDao.readFavoriteRecipes()
     }
 
+    fun readFoodJoke(): Flow<List<FoodJokeEntity>> {
+        return recipesDao.readFoodJoke()
+    }
+
 
 
     suspend fun insertRecipes(recipesEntity: RecipesEntity) {
@@ -26,6 +31,11 @@ class LocalDataSource @Inject constructor(
     suspend fun insertFavoriteRecipes(favoritesEntity: FavoritesEntity) {
         recipesDao.insertFavoriteRecipes(favoritesEntity)
     }
+
+    suspend fun insertFoodJoke(foodJokeEntity: FoodJokeEntity) {
+        recipesDao.insertFoodJoke(foodJokeEntity)
+    }
+
     suspend fun deleteFavoriteRecipe(favoritesEntity: FavoritesEntity){
         recipesDao.deleteFavoriteRecipes(favoritesEntity)
     }

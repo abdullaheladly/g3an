@@ -4,11 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/projets/G3an/app/src/main/res/drawable/gradient_overlay.xml" value="0.1046875" />
+        <entry key="..\:/projets/G3an/app/src/main/res/drawable/ic_food_joke.xml" value="0.20833333333333334" />
         <entry key="..\:/projets/G3an/app/src/main/res/drawable/ic_search.xml" value="0.20833333333333334" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/activity_details.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/projets/G3an/app/src/main/res/layout/activity_splach.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/favorite_recipes_row_layout.xml" value="0.1921875" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/fragment_favorite_recipes.xml" value="0.14" />
+        <entry key="..\:/projets/G3an/app/src/main/res/layout/fragment_food_joke.xml" value="0.11730072463768115" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/fragment_ingredients.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/fragment_instructions.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/fragment_over_view.xml" value="0.15" />
@@ -20,6 +23,7 @@
         <entry key="..\:/projets/G3an/app/src/main/res/menu/details_menu.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/menu/favorite_contextual_menu.xml" value="0.1921875" />
         <entry key="..\:/projets/G3an/app/src/main/res/menu/favorite_recipes_menu.xml" value="0.1921875" />
+        <entry key="..\:/projets/G3an/app/src/main/res/menu/food_joke_menu.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/menu/recipes_menu.xml" value="0.1" />
       </map>
     </option>

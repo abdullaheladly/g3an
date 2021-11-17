@@ -39,7 +39,7 @@ class RecipesBottomSheet : BottomSheetDialogFragment() {
         recipesViewModel.readMealAndDietType.asLiveData().observe(viewLifecycleOwner,{value->
             mealTypeChip=value.selectedMealType
             dietTypeChip=value.selectedDietType
-            updateChip(value.selectedMealTypeID,mView.mealType_chipGroup)
+            updateChip(value.selectedMealTypeId,mView.mealType_chipGroup)
             updateChip(value.selectedDietTypeId,mView.dietType_chipGroup)
 
         })
