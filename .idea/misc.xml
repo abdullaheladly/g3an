@@ -7,6 +7,7 @@
         <entry key="..\:/projets/G3an/app/src/main/res/drawable/ic_food_joke.xml" value="0.20833333333333334" />
         <entry key="..\:/projets/G3an/app/src/main/res/drawable/ic_search.xml" value="0.20833333333333334" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/activity_details.xml" value="0.1" />
+        <entry key="..\:/projets/G3an/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/activity_splach.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/favorite_recipes_row_layout.xml" value="0.1921875" />
@@ -18,8 +19,10 @@
         <entry key="..\:/projets/G3an/app/src/main/res/layout/fragment_recipes.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/ingredients_row_layout.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/placeholder_row_layout.xml" value="0.1" />
+        <entry key="..\:/projets/G3an/app/src/main/res/layout/recipes_bottom_sheet.xml" value="0.33" />
         <entry key="..\:/projets/G3an/app/src/main/res/layout/recipes_row_layout.xml" value="0.18" />
         <entry key="..\:/projets/G3an/app/src/main/res/menu-v26/favorite_contextual_menu.xml" value="0.1921875" />
+        <entry key="..\:/projets/G3an/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/menu/details_menu.xml" value="0.1" />
         <entry key="..\:/projets/G3an/app/src/main/res/menu/favorite_contextual_menu.xml" value="0.1921875" />
         <entry key="..\:/projets/G3an/app/src/main/res/menu/favorite_recipes_menu.xml" value="0.1921875" />
